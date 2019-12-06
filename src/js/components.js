@@ -39,6 +39,11 @@ const Product = props => (
   </div>
 );
 
+// Дэфолтные настройки, в случае если не передали prop
+Product.defaultProps = {
+  alt: "Product image",
+};
+
 // Вызов компонента записывается как JSX-тег
 // ReactDOM.render(<Product />, document.getElementById('root'));
 
@@ -48,8 +53,6 @@ const Product = props => (
 /**
  * Свойства компонента (props) - обьект
  * Это настройки компонента, те данные которые компонент получает и подставляет в результирующую разметку
- *
- *
  */
 
 // Вызов компонента

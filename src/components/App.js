@@ -13,7 +13,7 @@ const App = () => (
 
     <Product2
       imageURL="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
-      alt="Tacos With Lime"
+      // alt="Tacos With Lime"
       name="Tacos With Lime"
       price={50.55}
     />
