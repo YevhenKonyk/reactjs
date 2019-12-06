@@ -26,7 +26,7 @@ const Product = props => (
 
 // Дэфолтные настройки, в случае если не передали prop
 Product.defaultProps = {
-  alt: "Product image",
+  alt: 'Product image',
 };
 
 // Можно описать для всех prop какой тип ожидается
@@ -35,6 +35,6 @@ Product.propTypes = {
   alt: PropTypes.string,
   name: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
-}
+};
 
 export default Product;
