@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Components
-import Product2 from '../components/Product';
-import Panel from '../components/Panel';
-import ProFileDetails from '../components/Profile';
+import App from '../components/App';
 
 /**
  * Компоненты - основные строительные блоки React-приложений, позволяющие разделить интерфейс на независимые части.
@@ -42,7 +40,7 @@ const Product = props => (
 );
 
 // Вызов компонента записывается как JSX-тег
-ReactDOM.render(<Product />, document.getElementById('root'));
+// ReactDOM.render(<Product />, document.getElementById('root'));
 
 // Это аналогично
 // ReactDOM.render(React.createElement(Product), document.getElementById('root'));
@@ -55,27 +53,7 @@ ReactDOM.render(<Product />, document.getElementById('root'));
  */
 
 // Вызов компонента
-ReactDOM.render(
-  //React Fragment - так как для рендеринга нескольких элементов нужен общий родитель.
-  <>
-    <Panel title="Profile Details">
-      <ProFileDetails name="Yevhen Konyk" email="yevhen.konyk@gmail.com" />
-    </Panel>
-
-    <Product2
-      imageURL="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
-      alt="Tacos With Lime"
-      name="Tacos With Lime"
-      price={50.55}
-    />
-    <Product2
-      imageURL="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
-      alt="Fries and Burger"
-      name="Fries and Burger"
-      price={12.45}
-    />
-  </>,
-  document.getElementById('root'),
+ReactDOM.render( <App />, document.getElementById('root'),
 );
 
 /**
