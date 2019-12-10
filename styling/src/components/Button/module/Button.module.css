@@ -1,4 +1,8 @@
 /* Button.css */
+
+/*Композиция
+В CSS-модулях можно делать композицию стилей прямо в CSS-файле с помощью свойства composes.
+*/
 .button {
     display: inline-flex;
     margin: 0 4px;
@@ -18,7 +22,8 @@
     background-color: #1976d2;
   }
   
-  .button.disabled {
+ .disabled {
+    composes: button;
     background-color: #0000001f;
     color: #00000042;
   }

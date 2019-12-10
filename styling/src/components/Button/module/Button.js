@@ -15,7 +15,7 @@ import buttonStyles from './Button.module.css';
  */
 const Button = ({ type = 'button', label = '', disabled = false }) => {
   return (
-    <button type={type} disabled={disabled} className={buttonStyles.button}>
+    <button type={type} disabled={disabled} className={disabled ? buttonStyles.disabled : buttonStyles.button}>
       {label}
     </button>
   );

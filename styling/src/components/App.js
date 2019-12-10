@@ -12,7 +12,7 @@ import ButtonWithCSSModules from './Button/module/Button';
 const App = () => (
   //React Fragment - так как для рендеринга нескольких элементов нужен общий родитель.
   <>
-    <ButtonWithCSSModules label='Button With CSS Modules'/>
+    <ButtonWithCSSModules label='Button With CSS Modules' disabled/>
     <ButtonWithInlineStyles label="Button with inline styles"/>
     <ButtonWithVanilaCSS label="ButtonWithVanilaCSS"/>
     <Panel title="Best Sellers">
