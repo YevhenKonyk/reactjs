@@ -8,6 +8,7 @@ import ButtonWithInlineStyles from './Button';
 import ButtonWithVanilaCSS from './Button/Button';
 import ButtonWithCSSModules from './Button/module/Button';
 import Dropdown from './Dropdown/Dropdown';
+import DropdownStyled from './DropDownStyledComponent/DropDownStyledComponent';
 
 const App = () => (
   //React Fragment - так как для рендеринга нескольких элементов нужен общий родитель.
@@ -19,6 +20,7 @@ const App = () => (
     <Panel title="Best Sellers">
       <ProductList items={Products}></ProductList>
     </Panel>
+    <DropdownStyled isOpen />
   </>
 );
 
