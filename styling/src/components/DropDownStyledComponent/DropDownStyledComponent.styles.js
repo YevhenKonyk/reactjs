@@ -7,7 +7,7 @@ export const StyledContainer = styled.div`
   display: inline-block;
 `;
 
-export const StyledButton = styled.button`
+export const StyledBurgerButton = styled.button`
   padding: 0;
   border: 0;
   outline: 0;
@@ -21,6 +21,16 @@ export const StyledButton = styled.button`
     background-color: #686de0;
     color: #fff;
   }
+`;
+
+export const StyledDropdownContainer = styled.div`
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 300px;
+  z-index: 2;
+  border: 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 24px 2 rgba(0, 0, 0, 0.14);
 `;
 
 export const StyledList = styled.ul`
