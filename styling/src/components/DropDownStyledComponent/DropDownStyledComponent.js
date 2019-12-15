@@ -7,7 +7,7 @@ import {
   StyledBurgerButton,
   StyledList,
   StyledListItem,
-} from './DropDownStyledComponent.styles';
+} from './DropDownStyledComponent.styled';
 
 const DropdownStyled = ({ isOpen = false }) => (
   <StyledContainer>
